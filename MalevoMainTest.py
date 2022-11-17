@@ -157,7 +157,6 @@ def MalevoMain():
         else:
             cB = float(Bebidas.get())
 
-
         CostoDelDesayunoIntegral = 1000
         CostoDelNotBurger = 1300
         CostoDelDesayunoAmericano = 1400
@@ -450,7 +449,6 @@ def MalevoMain():
     def price():
         root.withdraw()
         rootPrice = tk.Toplevel()
-        rootPrice.title("Precios")
         rootPrice.geometry("500x960+725+0")
         rootPrice.resizable(0, 0)
         rootPrice.title("Lista de Precios")
@@ -460,12 +458,16 @@ def MalevoMain():
 
         # ----------------------- ROW 0 ---------------------
 
+        CostoIntegral = 1000
+        CostoNotBurger = 1300
+        CostoAmericano = 1400
+
         def Volver():
             rootPrice.withdraw()
             root.deiconify()
 
         ButtonVolver = tk.Button(rootPrice, text="Volver", cursor="hand2", width=4, relief="flat", bg="RoyalBlue1",
-                                 fg="white", font=("Comic Sans MS", 10, "bold"), command=Volver)
+                                 fg="white", font=("arial", 10, "bold"), command=Volver)
         ButtonVolver.grid(row=0, column=4, padx=25, pady=5)
 
         lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="OPCIONES", bg="indian red", fg="black", bd=5)
@@ -475,44 +477,44 @@ def MalevoMain():
 
         # ----------------------- ROW 1 --------------------
 
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="Desayuno Integral", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="Desayuno Integral", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=1, column=0)
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="1200", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text=CostoIntegral, bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=1, column=3)
 
         # ----------------------- ROW 2 --------------------
 
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="Not Burger", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="Not Burger", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=2, column=0)
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="1500", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text=CostoNotBurger, bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=2, column=3)
 
         # ----------------------- ROW 3 -------------------
 
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="DesayunoAmericano", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="DesayunoAmericano", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=3, column=0)
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="1300", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text=CostoAmericano, bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=3, column=3)
 
         # ----------------------- ROW 4 -------------------
 
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="x", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="x", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=4, column=0)
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="200", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="200", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=4, column=3)
 
         # ----------------------- ROW 5 -------------------
 
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="x2", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="x2", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=5, column=0)
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="120", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="120", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=5, column=3)
 
         # ----------------------- ROW 6 -------------------
 
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="x3", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="x3", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=6, column=0)
-        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="100", fg="RoyalBlue3", anchor=W)
+        lblinfo = Label(rootPrice, font=('aria', 15, 'bold'), text="100", bg= "RoyalBlue4", fg="white", anchor=W)
         lblinfo.grid(row=6, column=3)
 
         # ----------------------- ROW 7 -------------------
